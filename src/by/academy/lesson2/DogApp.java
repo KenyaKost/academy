@@ -39,8 +39,18 @@ public class DogApp {
         String dogColor = dog1.getColor();
         System.out.println(dogColor);
 
-        dog1.setAge(21);
-        System.out.println(dog1.age);
+        dog1.setAge(0);
+        System.out.println(dog1.nickname + " " + dog1.age + " " + dog1.color);
+
+//        while (dog1.age < 7){
+//            dog1.grow();
+//            System.out.println(dog1.nickname + " " + dog1.age + " " + dog1.color);
+//        }
+//        System.out.println("Пора в школу");
+        do {
+            dog1.grow();
+            System.out.println(dog1.nickname + " " + dog1.age);
+        } while (dog1.age < 7 );
     }
 
 

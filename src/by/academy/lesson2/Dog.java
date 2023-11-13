@@ -37,6 +37,14 @@ public class Dog {
         this.age = age;
     }
 
+
+     void grow(){
+      getAge();
+      this.age = age +1;
+      setAge(age);
+    }
+
+
     public void setNickname(String nickname){
         this.nickname = nickname;
     }
