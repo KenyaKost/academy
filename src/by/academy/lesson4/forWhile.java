@@ -30,8 +30,7 @@ public class forWhile {
 //        System.out.println("произведение чисел: " + sum);
     for(int i = 0; i <= 100; i++){
         if(i % 13 ==0){
-            System.out.print(""); // Таким образом я пропускаю все числа которые кратны 13
-            continue;
+            continue; // Таким образом я пропускаю все числа которые кратны 13
         }
         System.out.println(i); // обязательно в конце
     }
