@@ -55,7 +55,7 @@ public class IfElseDeno {
                     System.out.println("Результат вычитания: " + (ac - bc));
                 } else if ("+".equals(znak)) {
                     System.out.println("Результат сложения: " + (ac + bc));
-                } else if ("/".equals(znak) && bc > 0) {
+                } else if ("/".equals(znak) && bc != 0) {
                     if (ac % bc == 0) {
                         int otvet;
                         otvet = ac / bc;
