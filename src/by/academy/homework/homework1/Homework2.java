@@ -10,18 +10,19 @@ public class Homework2 {
         System.out.println("Введите переменную");
         String enter = sc.nextLine();
         double num;
+        int num1;
         switch (type) {
             case ("int"):
-                num = Integer.valueOf(enter);
-                System.out.println("Вывод: " + (num % 2));
+                num1 = Integer.valueOf(enter);
+                System.out.println("Остаток от деления: " + (num1 % 2));
                 break;
             case ("double"):
                 num = Integer.valueOf(enter);
-                System.out.println("Вывод: " + (num * 70.0 / 100));
+                System.out.println("70% от числа: " + (num * 70.0 / 100));
                 break;
             case ("float"):
                 num = Integer.valueOf(enter);
-                System.out.println("Вывод: " + (num * num));
+                System.out.println("Квадрат числа: " + (num * num));
                 break;
             case ("String"):
                 System.out.println("Hello " + enter);
