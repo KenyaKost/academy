@@ -7,7 +7,7 @@ public class IfElseDeno {
         Scanner sc = new Scanner(System.in);
         boolean exit = false;
         while (exit == false) {
-            System.out.println("");
+            System.out.println("-----------------------------------");
             System.out.println("Выберите действие:");
             System.out.println("1. Больше, меньше среднее арефм. ");
             System.out.println("2. Проверка на четность");
