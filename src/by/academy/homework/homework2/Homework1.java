@@ -1,6 +1,5 @@
 package by.academy.homework.homework2;
 
-import java.sql.Array;
 import java.util.Scanner;
 
 public class Homework1 {
@@ -12,7 +11,7 @@ public class Homework1 {
         String[] hello1 = new String[hello.length()];
         int num1 = 0;
         int num2 = 0;
-        int result = 0;
+        int result = 1;
         boolean complete = false;
         if(word.length() == hello.length()) {
             for (int i = 0; i < word.length(); i++){
@@ -20,7 +19,7 @@ public class Homework1 {
                 letters[i] = String.valueOf(c);
             }
             for (int i = 0; i < hello.length(); i++) {
-                char c = word.charAt(i);
+                char c = hello.charAt(i);
                 hello1[i] = String.valueOf(c);
             }
 
@@ -29,22 +28,25 @@ public class Homework1 {
                      result++;
                      num2 = 0;
                      num1++;
+                     continue;
                  }
-                 num2++;
-                 if(num2 == hello1.length){
+
+                 if(num2 == hello1.length-1){
                      num2 = 0;
                      num1++;
                  }
-                 if (num1 == hello1.length){
+
+                 if (num1 == hello1.length-1){
                      complete = true;
                  }
+                 num2++;
              }
-            System.out.println(result);
              if (result == hello1.length){
-                 System.out.println("Ваше слово является перестановкой слова HELLO");
-             } else System.out.println("Ваше слово НЕ является перестановкой слова HELLO");
+                 System.out.println("Ваше слово является перестановкой слова hello");
+             } else System.out.println("Ваше слово НЕ является перестановкой слова hello");
         }
-        }
+
+    }
 
     }
 
