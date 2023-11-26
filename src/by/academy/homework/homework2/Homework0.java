@@ -12,7 +12,6 @@ public class Homework0 {
         int max = arr.length + 1;
         for (int i = 0; i < max; i++) {
             if (arr[check] - arr[check2] == k) {
-                System.out.println("Пара найдена!!");
                 pairsCount++;
             }
             check2++;
@@ -44,7 +43,6 @@ public class Homework0 {
 
         for (int i = 0; i < n; i++) {
             arr[i] = Integer.parseInt(arrItems[i]);
-            System.out.println(arr[i]);
         }
 
         int result = pairs(k, arr);
