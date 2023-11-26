@@ -45,7 +45,7 @@ public class Homework1 {
                  System.out.println("Ваше слово является перестановкой слова hello");
              } else System.out.println("Ваше слово НЕ является перестановкой слова hello");
         }
-
+        sc.close();
     }
 
     }
